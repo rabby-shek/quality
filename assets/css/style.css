@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap");
+
+body {
+  font-family: "Spline Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: #222;
+}
+a {
+  color: #222;
+  text-decoration: none;
+  transition: all 0.4s;
+  font-weight: 600;
+}
+a:hover {
+  color: #f58d17;
+}
+.shadow-on-hover{
+    transition: all 0.4s;
+}
+.shadow-on-hover:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+p{
+    font-size: 18px;
+    color: #3f3f3f;
+}
+img {
+  width: 100%;
+}
+.navbar-brand img {
+  width: 40px;
+  height: auto;
+}
+
+.btn {
+  border-radius: 0;
+  padding: 14px 38px;
+}
+.btn-brand {
+  color: #fff;
+  font-weight: 500;
+  border-color: #f58d17;
+  background-color: #f58d17;
+}
+.btn-brand:hover {
+  background-color: #fff;
+}
+.slide-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/pasta-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slide-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/burger.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* about */
+#about .divider{
+    width: 60px;
+    height: 2px;
+    display: block;
+    background-color: #f58d17;
+}
+
+/* menu */
+
+#menu .nav-pills .nav-link{
+    background-color: #fff;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #222;
+}
+#menu .nav-pills .nav-link.active{
+    background-color: #f58d17;
+    color: #fff;
+}
+.intro-text{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.intro-text p{
+    max-width: 500px;
+    margin: 16px auto 0 auto;
+}
+.menu-item{
+ margin-bottom: 20px;
+ cursor: pointer;
+}
+.menu-item .stars{
+    color: #f58d17;
+}
+
+/* features */
+#features{
+  margin: 120x 0px;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/chicken-steak.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.features{
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+  height: 400px;
+}
+.features .features-icon{
+  width: 70px;
+  height: 70px;
+  background-color: #f58d17;
+  color: #fff;
+  display: inline-grid;
+  place-items: center;
+  font-size: 28px;
+  
+}
+.features:hover{
+  background-color: #22222227;
+}
+/* team */
+#team{
+  margin: 120px 0px;
+}
+.team-member{
+  margin-bottom: 20px;
+}
+
+/* reviews */
+#reviews{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/burger.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 120px 0px;
+  padding: 40px 10px;
+}
+#reviews .review{
+  background-color: #ffffff21;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+.review img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+/* reservation */
+#reservation{
+  margin: 120px 0px;
+}
+#reservation .form-control:focus{
+  box-shadow: none;
+  border-color: #f58d17;
+}
+
+/* insta-post */
+.insta-post{
+  position: relative;
+  overflow: hidden;
+  margin-top: 0px;
+}
+.insta-post .insta-btn{
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 26px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.insta-post img{
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.insta-post:hover img{
+  transform: scale(1.1);
+}
+.insta-post:hover .insta-btn{
+  opacity: 1;
+}
+
+/* blog */
+#blog{
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.blog-post{
+  background-color: #2222220a;
+  cursor: pointer;
+}
+.blog-post img{
+  width: 40%;
+  object-fit: cover;
+}
+
+/* footer */
+
+footer{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/burger.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+footer a{
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+}
+footer p{
+  color: #fff;
+}
+footer img{
+  width: 75px;
+}
+.footer-bottom{
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #000;
+}
+
+/* responsive design */
+@media (max-width: 1024px){
+  .blog-post{
+    flex-direction: column;
+  }
+  .blog-post img{
+    width: 100%;
+  }
+}
