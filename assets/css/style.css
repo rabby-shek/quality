@@ -34,11 +34,15 @@ p {
 img {
   width: 100%;
 }
+/* navbar */
 .navbar-brand img {
   width: 40px;
   height: auto;
 }
-
+.navbar-light .navbar-nav .nav-link.active{
+  color: #f58d17;
+}
+/* button */
 .btn {
   border-radius: 0;
   padding: 14px 38px;
@@ -52,6 +56,7 @@ img {
 .btn-brand:hover {
   background-color: #fff;
 }
+/* image slider */
 .slide-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/pasta-2.jpg");
